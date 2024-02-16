@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- SweetAlert2 CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Despensa Ejercicio 1</title>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/Ejercicio2.html">Ejercicio2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container mt-5">
+        <h1></h1>
+        <p></p>
+        <form id="DespensaForm">
+            <div class="row">
+                <div class="form-group col-3 mb-3">
+                    <label for="Producto1">Precio Producto 1</label>
+                    <input type="number" class="form-control" id="Producto1" placeholder="Ingrese">
+                </div>
+                <div class="form-group col-3 mb-3">
+                    <label for="Producto2"> Precio Producto 2</label>
+                    <input type="number" class="form-control" id="Producto2" placeholder="Ingrese 2">
+                </div>
+                <div class="form-group col-3 mb-3">
+                    <label for="Producto3"> Precio Producto 3</label>
+                    <input type="number" class="form-control" id="Producto3" placeholder="Ingrese 3">
+                </div>
+                <div class="form-group col-3 mb-3">
+                    <label for="Producto4"> Precio Producto 4</label>
+                    <input type="number" class="form-control" id="Producto4" placeholder="Ingrese 4">
+                </div>
+                <div class="form-group col-3 mb-3">
+                    <label for="Producto5"> Precio Producto 5</label>
+                    <input type="number" class="form-control" id="Producto5" placeholder="Ingrese 5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-3 mb-3">
+                    <label for="subtotal">subtotal</label>
+                    <input type="number" class="form-control" id="Subtotal" readonly placeholder="" value="">
+                </div>
+                <div class="form-group col-3 mb-3">
+                    <label for="total">total</label>
+                    <input type="number" class="form-control" id="Total" readonly placeholder="" value="">
+                </div>
+                <div class="form-group col-3 mb-3">
+                    <label for="Descuento">Descuento</label>
+                    <input type="number" class="form-control" id="Descuento" readonly placeholder="" value="">
+                </div>
+            </div>
+
+            <!-- <button type="button" onclick="validarInputsPorId();" class="btn btn-primary"
+                id="calcularBtn">Verficar</button> -->
+            <button type="button" onclick="validarYCalcular();" class="btn btn-primary"
+                id="calcularBtn">Calcular</button>
+            <button type="button" onclick="reiniciarDespensa();" class="btn btn-danger" id="reiniciar">limpiar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+
+    <script src="/js/Despensa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
+</html>

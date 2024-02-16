@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <h1 class="mb-4">Formulario de Pedido</h1>
+    <form id="pedidoForm">
+        <div class="mb-3">
+            <label for="producto1" class="form-label">Producto 1</label>
+            <input type="number" class="form-control" id="producto1" name="producto1" required>
+        </div>
+        <div class="mb-3">
+            <label for="producto2" class="form-label">Producto 2</label>
+            <input type="number" class="form-control" id="producto2" name="producto2" required>
+        </div>
+        <div class="mb-3">
+            <label for="producto3" class="form-label">Producto 3</label>
+            <input type="number" class="form-control" id="producto3" name="producto3" required>
+        </div>
+        <div class="mb-3">
+            <label for="producto4" class="form-label">Producto 4</label>
+            <input type="number" class="form-control" id="producto4" name="producto4" required>
+        </div>
+        <div class="mb-3">
+            <label for="producto5" class="form-label">Producto 5</label>
+            <input type="number" class="form-control" id="producto5" name="producto5" required>
+        </div>
+        <div class="mb-3">
+            <label for="subtotal" class="form-label">Subtotal</label>
+            <input type="number" class="form-control" id="subtotal" name="subtotal" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="descuento" class="form-label">Descuento</label>
+            <input type="text" class="form-control" id="descuento" name="descuento" readonly value="Descuento 0%">
+        </div>
+        <div class="mb-3">
+            <label for="total" class="form-label">Total a pagar</label>
+            <input type="number" class="form-control" id="total" name="total" readonly>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calcularTotal()">Calcular</button>
+        <button type="button" class="btn btn-secondary" onclick="limpiarFormulario()">Limpiar</button>
+    </form>
+</div>

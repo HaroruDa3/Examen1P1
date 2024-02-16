@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section nav {
+    background-color: #ee6c4d;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #000000;
+}
