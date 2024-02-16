@@ -52,7 +52,7 @@ function calcularTotal() {
     asignarTextoElemento('#Subtotal', ` ${subtotal}`);
 
     if (subtotal !== "" && parseFloat(subtotal) >= 0 && parseFloat(subtotal) < 1000) {
-        descuento = subtotal * 0.10;
+        descuento = subtotal;
         total = subtotal - descuento;
         asignarTextoElemento('#Total', ` ${total}`);
         asignarTextoElemento('#Descuento', `Descuento de 0%: ${descuento}`)// No aplica descuento
