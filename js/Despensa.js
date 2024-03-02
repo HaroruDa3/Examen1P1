@@ -1,5 +1,6 @@
 console.log('Hola mundo');
-
+let total='';
+let subtotal='';
 
 function validarInputsPorId() {
 
@@ -37,8 +38,6 @@ function validarInputsPorId() {
 function calcularTotal() {
 
     let descuento = 0;
-    let subtotal = 0;
-    let total = 0;
 
     let pro1 = parseInt(document.getElementById('Producto1').value);
     let pro2 = parseInt(document.getElementById('Producto2').value);
@@ -104,8 +103,9 @@ function limpiar() {
     document.querySelector('#Producto3').value = '';
     document.querySelector('#Producto4').value = '';
     document.querySelector('#Producto5').value = '';
-    document.querySelector('#Subtotal').value = '';
-    document.querySelector('#Total').value = '';
+    document.querySelector('#Subtotal').placeholder =''
+    document.querySelector('#Total').placeholder =''
+
 }
 
 function reiniciarDespensa() {
@@ -123,7 +123,6 @@ function condicionesIniciales() {
 /*Funcion de asignar texto a elementos según la condición */
 function asignarTextoElemento(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
-    elementoHTML.innerHTML = texto;
     elementoHTML.placeholder = texto;
     return;
 }
